@@ -3,7 +3,9 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,34 +18,56 @@
 
         <header>
             <nav class="content-header container">
-                <div class="header-icone">
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <div class="header-icone" >
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"data-aos="fade-down" data-aos-duration="200">
                         <i class="fa-brands fa-instagram fa-2x" ></i>
                     </a>    
 
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"data-aos="fade-down" data-aos-duration="300">
                         <i class="fa-brands fa-facebook fa-2x"></i>
                     </a> 
 
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"data-aos="fade-down" data-aos-duration="400">
                         <i class="fa-brands fa-tiktok fa-2x"></i>
                     </a> 
                 </div>
 
-                <div class="header-logo">
-                    <img src="assets/spider-man-logo.png" alt="logo-spider-man">
+                <div class="header-logo" data-aos="fade-up" data-aos-delay="400">
+                    <img 
+                    src="assets/spider-man-logo.png" 
+                    alt="logo-spider-man" 
+                    data-aos="flip-up" 
+                    data-aos-delay="300" 
+                    data-aos-duration="1000">
                 </div>
 
                 <div>
-                    <button onclick="botao()" class="button" id="agora">BOTÃO</button>
+                    <button 
+                    onclick="botao()" 
+                    class="button" 
+                    id="agora" 
+                    data-aos="zoom-in-up" 
+                    data-aos-delay="500"
+                    >BOTÃO</button>
                 </div>
             </nav>
             
         
             <main class="wiki">
-                <h1 id="amigo-vizinhanca">O Amigão da Vizinhança</h1>
-                <p id="bordao">"Se alguém precisa de ajuda e você pode ajudar, tem a obrigação de fazer isso."</p>
-                <a href="https://herois.fandom.com/pt-br/wiki/Homem-Aranha_(Marvel)" target="_blank" class="button-wiki">Wiki</a>
+                <h1 id="amigo-vizinhanca" 
+                data-aos="fade-up" 
+                data-aos-delay="800"
+                >O Amigão da Vizinhança</h1>
+
+                <p id="bordao" 
+                data-aos="fade-up" 
+                data-aos-delay="1000"
+                >"Se alguém precisa de ajuda e você pode ajudar, tem a obrigação de fazer isso."</p>
+
+                <a href="https://herois.fandom.com/pt-br/wiki/Homem-Aranha_(Marvel)" target="_blank" class="button-wiki" 
+                data-aos="fade-up" 
+                data-aos-delay="1400"
+                >Wiki</a>
             </main>
         </header>
 
@@ -53,13 +77,27 @@
 
             <div class="container miranha">
                 <div>
-                    <img src="/assets/quadrinhos-png.png" alt="quadrinhos-homem-aranha">
-                </div>
+                    <img src="/assets/quadrinhos-png.png" alt="quadrinhos-homem-aranha" 
+                    data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    ></div>
 
                 <div class="descricao-sobre">
-                    <h2>Sobre</h2>
-                    <p>Depois de ser picado por uma aranha radioativa, o jovem Peter Parker que antes era um estudante comum se torna um dos maiores heróis de Nova York conhecido como Homem-Aranha, onde enfrenta todos os tipos de perigos no dia-a-dia.</p>
-                    <p>"Com <strong>grandes poderes</strong> vêm <strong>grandes responsabilidades</strong>."</p>
+                    <h2 
+                    data-aos="fade-down" 
+                    data-aos-delay="500"
+                    >Sobre</h2>
+                    
+                    <p 
+                    data-aos="fade-left" 
+                    data-aos-delay="800"
+                    >Depois de ser picado por uma aranha radioativa, o jovem Peter Parker que antes era um estudante comum se torna um dos maiores heróis de Nova York conhecido como Homem-Aranha, onde enfrenta todos os tipos de perigos no dia-a-dia.</p>
+
+                    <p 
+                    data-aos="fade-up" 
+                    data-aos-delay="2000"
+                    >"Com <strong>grandes poderes</strong> vêm <strong>grandes responsabilidades</strong>."</p>
                 </div>
             </div>
 
@@ -68,40 +106,62 @@
     <section class="viloes">
 
         <div class="viloes-info container">
-            <h2>Alguns dos principais vilões do Homem Aranha</h2>
-            <p>Aqui estão alguns dos vilões mais conhecidos e que todos gostam no mundo do homem-aranha</p>
+            <h2 data-aos="fade-down" data-aos-delay="500">Alguns dos principais vilões do Homem Aranha</h2>
+            <p data-aos="fade-up" data-aos-delay="800">Aqui estão alguns dos vilões mais conhecidos e que todos gostam no mundo do homem-aranha</p>
         </div>
         <section class="foto-viloes">
-            <div class="foto-vilao">
+
+            <div class="foto-vilao" 
+                data-aos="fade-down"
+                data-aos-duration="500">
+
                 <img src="/assets/venom-jpg.jpg" alt="venom-jpg">
                 <div class="vilao-info">
                     <strong>VENOM</strong>
                     <a href="https://crossverse.fandom.com/pt-br/wiki/Venom_(Marvel_Comics)" target="_blank">Sobre</a>
                 </div>
             </div>
-            <div class="foto-vilao">
+
+            <div class="foto-vilao"
+                data-aos="fade-down"
+                data-aos-duration="800">
+
                 <img src="/assets/doutor-octopus-jpg.jpg" alt="doutor-octopus-jpg">
                 <div class="vilao-info">
                     <strong>DOUTOR OCTOPUS</strong>
                     <a href="https://viloes.fandom.com/pt-br/wiki/Doutor_Octopus_(Marvel)" target="_blank">Sobre</a>
                 </div>
             </div>
-            <div class="foto-vilao">
+
+            <div class="foto-vilao"
+                data-aos="fade-down"
+                data-aos-duration="1200">
+
                 <img src="/assets/duende-verde-jpg.jpg" alt="duende-verde-jpg">
                 <div class="vilao-info">
                     <strong>DUENDE VERDE</strong>
                     <a href="https://viloes.fandom.com/pt-br/wiki/Duende_Verde_(Marvel)" target="_blank">Sobre</a>
                 </div>
             </div>
+
         </section>
 
     </section>
 
     <section class="ajudar miranha">
         <img src="/assets/spider-logo.png" alt="spider-logo" id="spider-logo">
+
         <div class="homem-aranha">
-        <h2>Faça igual ao <strong>Homem-Aranha</strong> e ajude os outros!</h2>
-        <a href="https://www.atados.com.br/" target="_blank" id="botao-ajudar">AJUDAR</a>
+        <h2 data-aos="fade-down" data-aos-delay="200">Faça igual ao <strong>Homem-Aranha</strong> e ajude os outros!</h2>
+
+        <a 
+        href="https://www.atados.com.br/" 
+        target="_blank" 
+        id="botao-ajudar" 
+        data-aos="zoom-out-up" 
+        data-aos-delay="500"
+        >AJUDAR</a>
+
         </div>
 
         <iframe 
@@ -113,12 +173,43 @@
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
+            allowfullscreen
+            data-aos="zoom-in-up"
+            data-aos-delay="500">
         </iframe>
     </section>
 
     <footer class="footer">
+        <div class="footer-icons">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <i class="fa-brands fa-instagram fa-2x" ></i>
+            </a>    
 
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+            </a> 
+
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <i class="fa-brands fa-tiktok fa-2x"></i>
+            </a> 
+        </div>
+
+        <div>
+            <img src="/assets/spider-man-logo.png" alt="spider-man-logo">
+        </div>
+
+        <p>Copyrigth 2026 | Kavyur Teste - Todos direitos reservados.</p>
     </footer>
+
+    <a data-aos="fade-left" data-aos-delay="3000"
+    class="btn-fandom"
+    href="https://herois.fandom.com/pt-br/wiki/Homem-Aranha_(Marvel)" 
+    target="_blank">
+        <img src="/assets/fandom-logo.png" alt="fandom-logo" >
+
+        <span class="maisinfo">Descubra mais sobre suas aventuras!</span>
+    </a>
+
+    <script src="app.js"></script>
 </body>
 </html>

@@ -352,21 +352,108 @@
     }
     }
 
-    /* --------------------------AJUDAR------------------------------ */
+/* --------------------------AJUDAR------------------------------ */
+
+/* ------------------------- FOOTER ------------------------------ */
+
+.footer {
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 54px 0;
+    color: white;
+    gap: 24px;
+    text-align: center;
+}
+
+.footer img {
+    height: 130px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 8px;
+}
+
+/* ------------------------- FOOTER ------------------------------ */
+
+/* ------------------------ BTN-FANDOM -------------------------- */
+
+.btn-fandom {
+
+    position: fixed;
+    bottom: 24px;
+    right: 14px;
+    z-index: 11;
+
+    img {
+    max-width: 100px;
+    transition: transform 0.4s
+    }
+
+    img:hover {
+        transform: scale(1.15);
+    }
+}
+
+.btn-fandom .maisinfo {
+    text-align: center;
+    visibility: hidden;
+    position: absolute;
+    width: 200px;
+    top: 8px;
+    left: -190px;
+    background-color: black;
+    color: white;
+    padding: 4px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.btn-fandom:hover .maisinfo {
+    visibility: visible;
+    opacity: 1;
+}
+/* ------------------------ BTN-FANDOM -------------------------- */
 
 
-    @media screen and (max-width: 700px) {
-        .wiki {
-            min-height: 60vh;
 
-            #amigo-vizinhanca {
-                font-size: 40px;
-                padding: 0 14px;
-                width: 100%;
-            }
+@media screen and (max-width: 700px) {
+    .wiki {
+        min-height: 60vh;
 
-            #bordao {
-                font-size: 15px;
-            }
+        #amigo-vizinhanca {
+            font-size: 40px;
+            padding: 0 14px;
+            width: 100%;
+        }
+
+        #bordao {
+            font-size: 15px;
         }
     }
+
+    .ajudar {
+        padding: 0;
+        margin-top: 60px;
+
+         h2 {
+            width: 300px;
+            font-size: 40px;
+        }
+    }
+
+    #salto-miranha {
+        width: 300px;
+        margin-bottom: 100px;
+    }
+
+    .btn-fandom {
+        max-width: 66px;
+        bottom: 15px;
+        right: 0;
+    }
+}
