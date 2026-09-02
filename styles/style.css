@@ -1,4 +1,17 @@
-    @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+:root {
+    --cor-primaria: rgb(83, 6, 19);
+    --cor-secundaria: rgb(5, 7, 75);
+    --cor-terciaria: rgb(255, 255, 255);
+    --cor-footer: rgb(17, 17, 17);
+    --cor-botao: rgb(255, 0, 0);
+    --cor-botao-hover: rgb(138, 1, 1);
+    --cor-botao-ativo: rgb(66, 1, 1);
+    --cor-sombra: rgba(0, 0, 0);
+    --cor-linear: rgba(83, 6, 19, 0.1 );
+
+    --fonte-principal: 'Sora', sans-serif;
+    --fonte-complementar: Cursive, sans-serif;
+}
 
     * {
         margin: 0;
@@ -7,11 +20,11 @@
     }
 
     body {
-        font-family: 'Sora', sans-serif;
+        font-family: var(--fonte-principal);
         width: 100%;
         height: 100vh;
         position: relative;
-        background-color: rgb(83, 6, 19);
+        background-color: var(--cor-primaria);
     }
 
     header {
@@ -37,24 +50,31 @@
     }
 
     i {
-        color: white;
+        color: var(--cor-terciaria);
     }
 
     .button {
-        color: white;
-        border: 1px solid red;
-        padding: 8px 24px;
-        border-radius: 4px;
-        background-color: transparent;
-        font-family: 'Sora', sans-serif;
-        font-size: 17px;
-        cursor: pointer;
+        border: 1px solid var(--cor-terciaria);
+        padding: 13px;
+        border-radius: 50%;
+        background-color: var(--cor-primaria);
+        font-family: var(--fonte-principal);
+        font-size: 1rem;
+        margin-right: 65px;
+
+        i {
+            color: var(--cor-secundaria);
+        }
     }
 
     .button:hover {
-        background-color: rgb(5, 7, 75);
-        border: 1px solid white;
+        background-color: var(--cor-sombra);
+        border: 1px solid var(--cor-terciaria);
         transition: background-color 0.8s;
+
+        i {
+            color: var(--cor-terciaria);
+        }
     }
 
     .header-icone {
@@ -65,7 +85,7 @@
     .header-icone a:hover {
         i {
             animation: translateY 0.8s infinite alternate;
-            color: rgb(5, 7, 75);
+            color: var(--cor-secundaria);
         }
     }
 
@@ -86,7 +106,7 @@
         content: '';
         display: block;
         position: absolute;
-        background-image: linear-gradient(to bottom, rgba(83, 6, 19, 0.1 ), rgb(83, 6, 19)), url(/assets/marvel-spider-man.png);
+        background-image: linear-gradient(to bottom, var(--cor-linear), var(--cor-primaria)), url(/assets/marvel-spider-man.png);
         left: 0;
         top: 0;
         width: 100%;
@@ -99,7 +119,7 @@
     }
 
     .wiki {
-        color: white;
+        color: var(--cor-botao);
         min-height: 80vh;
 
         display: flex;
@@ -115,33 +135,35 @@
     }
 
     #amigo-vizinhanca {
-        font-family: cursive;
-        font-size: 80px;
+        font-family: var(--fonte-complementar);
+        font-size: 5rem;
         text-align: center;
         line-height: 150%;
         max-width: 940px;
+        color: var(--cor-terciaria);
     }
 
     #bordao {
-        font-size: 18px;
+        font-size: 1.125rem;
         text-align: center;
         margin: 14px 0;
+        color: var(--cor-terciaria);
     }
 
     .button-wiki {
         padding: 14px 28px;
-        color: white;
-        background-color: red;
+        color: var(--cor-terciaria);
+        background-color: var(--cor-botao);
         text-decoration: none;
         border-radius: 10px;
-        font-size: 20px;
+        font-size: 1.125rem;
         border: none;
         font-weight: 600;
         margin: 14px 0;
     }
 
     .button-wiki:hover {
-        background-color: rgb(5, 7, 75);
+        background-color: var(--cor-secundaria);
         transition: background-color 0.3s;
     }
 
@@ -151,9 +173,10 @@
     /* ---------------------- SOBRE --------------------------- */
 
     .sobre {
-        background-color: rgb(83, 6, 19);
+        background-color: var(--cor-primaria);
         overflow: hidden;
-        color: white;
+        color: var(--cor-terciaria);
+        height: 110vh;
     }
 
     .miranha {
@@ -162,6 +185,7 @@
         align-items: center;
         gap: 14px;
         padding: 34px 14px 64px 14px;
+        height: 100%;
 
         img {
             max-width: 500px;
@@ -174,12 +198,12 @@
 
     .descricao-sobre {
         h2 {
-            font-size: 32px;
+            font-size: 2rem;
             margin-bottom: 24px;
         }
 
         p {
-            font-size: 16px;
+            font-size: 1.125rem;
             margin-bottom: 14px;
             line-height: 150%;
         }
@@ -214,26 +238,27 @@
     /* -------------------------- VILOES ----------------------- */
 
     .viloes {
-        background-color: rgb(5, 7, 75);
-        color: white;
+        background-color: var(--cor-secundaria);
+        color: var(--cor-terciaria);
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 90px 14px;
         flex-direction: column;
+        height: 110vh;
     }
 
     .viloes-info {
 
         h2 {
             text-align: center;
-            font-size: 40px;
+            font-size: 2.5rem;
             margin-bottom: 15px;
         }
 
         p {
             text-align: center;
-            font-size: 15px;
+            font-size: 1.125rem;
             margin-bottom: 50px;
             line-height: 150%;
         }
@@ -256,10 +281,10 @@
         flex: 1;
         display: flex;
         flex-direction: column;
-        background-color: white;
+        background-color: var(--cor-terciaria);
         border-radius: 10px;
-        color: black;
-        box-shadow: 0px -1px 17px -4px black;
+        color: var(--cor-sombra);
+        box-shadow: 0px -1px 17px -4px var(--cor-sombra);
         overflow: hidden;
     }
 
@@ -271,21 +296,21 @@
         }
     }
     .vilao-info {
-        background-color: white;
+        background-color: var(--cor-terciaria);
         width: 100%;
         display: flex;
         justify-content: space-between;
         padding: 14px;
         z-index: 10;
-        font-family: cursive;
-        font-size: 20px;
+        font-family: var(--fonte-complementar);
+        font-size: 1.125rem;
         cursor: default;
 
         a {
-            color: white;
-            background-color: red;
+            color: var(--cor-terciaria);
+            background-color: var(--cor-botao);
             padding: 4px 10px;
-            font-size: 20px;
+            font-size: 1.125rem;
             border: 0;
             border-radius: 10px;
             cursor: pointer;
@@ -294,11 +319,11 @@
     }
 
     .vilao-info a:hover {
-        background-color: rgb(138, 1, 1);
+        background-color: var(--cor-botao-hover);
     }
 
     .vilao-info a:active {
-        background-color: rgb(66, 1, 1);
+        background-color: var(--cor-botao-ativo);
     }
 
     /* -------------------------- VILOES ----------------------- */
@@ -306,7 +331,7 @@
     /* --------------------------AJUDAR------------------------------ */
 
     .ajudar {
-        height: 100vh;
+        height: 110vh;
         padding: 0 200px;
     }
 
@@ -317,38 +342,38 @@
     }
 
     .homem-aranha {
-        color: white;
+        color: var(--cor-terciaria);
         display: flex;
         flex-direction: column;
 
         h2 {
             text-align: center;
-            font-size: 50px;
-            font-family: cursive;
+            font-size: 2.5rem;
+            font-family: var(--fonte-complementar);
             width: 750px;
             align-self: center;
         }
 
         #botao-ajudar {
-        color: white;
+        color: var(--cor-terciaria);
         text-decoration: none;
-        background-color: rgb(5, 7, 75);
+        background-color: var(--cor-secundaria);
         padding: 10px 35px;
-        font-size: 32px;
+        font-size: 2rem;
         border-radius: 20px;
-        font-family: cursive;
+        font-family: var(--fonte-complementar);
         font-weight: bold;
         align-self: center;
         margin-top: 30px;
     }
 
     #botao-ajudar:hover {
-        background-color: red;
+        background-color: var(--cor-botao-hover);
         transition: background-color 0.3s;
     }
 
     #botao-ajudar:active {
-        background-color: rgb(77, 4, 4);
+        background-color: var(--cor-botao-ativo);
     }
     }
 
@@ -357,13 +382,13 @@
 /* ------------------------- FOOTER ------------------------------ */
 
 .footer {
-    background-color: rgb(17, 17, 17);
+    background-color: var(--cor-footer);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 54px 0;
-    color: white;
+    color: var(--cor-terciaria);
     gap: 24px;
     text-align: center;
 }
@@ -405,8 +430,8 @@
     width: 200px;
     top: 8px;
     left: -190px;
-    background-color: black;
-    color: white;
+    background-color: var(--cor-sombra);
+    color: var(--cor-terciaria);
     padding: 4px;
     border-radius: 8px;
     opacity: 0;
@@ -426,13 +451,13 @@
         min-height: 60vh;
 
         #amigo-vizinhanca {
-            font-size: 40px;
+            font-size: 2.5rem;
             padding: 0 14px;
             width: 100%;
         }
 
         #bordao {
-            font-size: 15px;
+            font-size: 1.125rem;
         }
     }
 
@@ -442,7 +467,7 @@
 
          h2 {
             width: 300px;
-            font-size: 40px;
+            font-size: 2.5rem;
         }
     }
 
