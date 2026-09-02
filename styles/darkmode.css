@@ -447,6 +447,25 @@
 
 
 @media screen and (max-width: 700px) {
+    
+    .button {
+        margin: 0;
+        padding: 7px 10px;
+
+        i {
+            font-size: 1rem;
+        }
+    }
+
+    .sobre {
+        height: 220vh;
+    }
+
+    .viloes {
+        height: 230vh;
+
+    }
+
     .wiki {
         min-height: 60vh;
 
@@ -468,6 +487,11 @@
          h2 {
             width: 300px;
             font-size: 2.5rem;
+            -webkit-text-stroke: 0 solid var(--cor-terciaria);
+        }
+
+        #botao-ajudar {
+            margin-top: 10px;
         }
     }
 
