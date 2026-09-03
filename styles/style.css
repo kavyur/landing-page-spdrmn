@@ -459,6 +459,7 @@
 
     .sobre {
         height: 185vh;
+        padding: 0 10px;
     }
 
     .viloes {
@@ -468,6 +469,7 @@
 
     .wiki {
         min-height: 60vh;
+        padding: 0 10px;
 
         #amigo-vizinhanca {
             font-size: 2.5rem;
